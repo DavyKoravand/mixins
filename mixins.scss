@@ -1,30 +1,42 @@
+// Cross-browser attribute mixins
 @mixin transform($property...) {
-  -webkit-transform:    $property;
-  -moz-transform:       $property;
-  -ms-transform:        $property;
-  -o-transform:         $property;
-  transform:            $property;
+  -webkit-transform:      $property;
+  -moz-transform:         $property;
+  -ms-transform:          $property;
+  -o-transform:           $property;
+  transform:              $property;
 }
 
 @mixin transition($property...) {
-  -webkit-transition:   $property;
-  -moz-transition:      $property;
-  -o-transition:        $property;
-  transition:           $property;
+  -webkit-transition:     $property;
+  -moz-transition:        $property;
+  -o-transition:          $property;
+  transition:             $property;
 }
 
 @mixin box-shadow($property...) {
-  -webkit-box-shadow:   $property;
-  -moz-box-shadow:      $property;
-  box-shadow:           $property;
+  -webkit-box-shadow:     $property;
+  -moz-box-shadow:        $property;
+  box-shadow:             $property;
 }
 
 @mixin user-select($property...) {
-  -webkit-touch-callout:$property;
-  -webkit-user-select:  $property;
-  -khtml-user-select:   $property;
-  -moz-user-select:     $property;
-  -ms-user-select:      $property;
-  user-select:          $property;
+  -webkit-touch-callout:  $property;
+  -webkit-user-select:    $property;
+  -khtml-user-select:     $property;
+  -moz-user-select:       $property;
+  -ms-user-select:        $property;
+  user-select:            $property;
 }
 
+@mixin border-radius($property...) {
+  -webkit-border-radius: $property;
+  -moz-border-radius:    $property;
+  border-radius:         $property;
+}
+
+@mixin background-clip($property...) {
+  -webkit-background-clip: $property;
+  -moz-background-clip: $property;
+  background-clip: $property;
+}
