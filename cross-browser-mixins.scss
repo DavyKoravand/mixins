@@ -40,3 +40,8 @@
   -moz-background-clip: $property;
   background-clip: $property;
 }
+
+@mixin hover() {
+  cursor: pointer;
+  cursor: hand;
+}
